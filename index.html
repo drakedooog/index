@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drakedoog Disgin</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- 页面主容器，限制最大宽度为1200px -->
+    <div class="container">
+      <!-- header -->
+      <div id="header-container"></div>
+      <!-- 主内容区域，卡片网格布局 -->
+      <div class="grid">
+        <!-- 单个内容项，添加超链接包裹整个item -->
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/1.webp" alt="示例图片1" />
+          <h3 class="image-title">网页 / H5 设计</h3>
+          <p class="image-desc">Website Design</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/2.webp" alt="示例图片1" />
+          <h3 class="image-title">UI 设计</h3>
+          <p class="image-desc">UI Design</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/3.jpg" alt="示例图片1" />
+          <h3 class="image-title">3D & 动效设计</h3>
+          <p class="image-desc">3D & Motion Design</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/4.png" alt="示例图片1" />
+          <h3 class="image-title">美术插画</h3>
+          <p class="image-desc">Illustration</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/5.webp" alt="示例图片1" />
+          <h3 class="image-title">营销广告</h3>
+          <p class="image-desc">Marketing Banner</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/6.webp" alt="示例图片1" />
+          <h3 class="image-title">Logo & 线下物料</h3>
+          <p class="image-desc">Logo & Offline Materials</p>
+        </a>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer-container"></div>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

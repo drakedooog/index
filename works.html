@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Works</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+        <!-- header -->
+        <div id="header-container"></div>
+        <div class="title">
+            <h1>Works</h1>
+            <h3>作品集</h3>
+        </div>
+
+         <!-- 主内容区域，卡片网格布局 -->
+      <div class="grid">
+        <!-- 单个内容项，添加超链接包裹整个item -->
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/1.webp" alt="" />
+          <h3 class="image-title">作品名称</h3>
+          <p class="image-desc">日期</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/1.webp" alt="" />
+          <h3 class="image-title">作品名称</h3>
+          <p class="image-desc">日期</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/1.webp" alt="" />
+          <h3 class="image-title">作品名称</h3>
+          <p class="image-desc">日期</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/1.webp" alt="" />
+          <h3 class="image-title">作品名称</h3>
+          <p class="image-desc">日期</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/1.webp" alt="" />
+          <h3 class="image-title">作品名称</h3>
+          <p class="image-desc">日期</p>
+        </a>
+        <a href="https://example.com/link1" class="item" target="_blank">
+          <img src="./img/1.webp" alt="" />
+          <h3 class="image-title">作品名称</h3>
+          <p class="image-desc">日期</p>
+        </a>
+      </div>
+    </div>
+    </div>
+       
+    <!-- footer -->
+    <div id="footer-container"></div>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+              fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

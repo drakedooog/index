@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div id="header-container"></div>
+      <!-- About ME -->
+      <div class="title">
+        <h1>About Me</h1>
+        <h3>关于我</h3>
+        <p>
+          设计不是一种技能，而是捕捉事物本质的感觉能力和洞察能力。
+          <br />
+          我是DrakeDooog，一个来自海拉鲁的设计师，最擅长网页设计。
+          <br />
+          同时对游戏、插画、摄影、视频剪辑、3D建模都很感兴趣。
+        </p>
+        <img src="./img/Hyrule.png" alt="" />
+        <h3 style="margin-top: 5rem">Digital Skills</h3>
+        <p class="Skills">
+          Photoshop, Illustrator, Adobe XD, Figma, InDesign, After Effects, C4D,
+          Blender, Stable Diffusion, Midjourney
+        </p>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer-container"></div>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-container").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
