@@ -33,9 +33,30 @@ body {
 
 /* 导航链接样式：间距、无下划线、颜色为深灰色 */
 .nav a {
+  position: relative;
   margin-left: 2rem;
   text-decoration: none;
   color: #545454;
+}
+
+/* 底部横线效果：初始隐藏 */
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  width: 12px;
+  height: 3px;
+  background-color: #a1a1a1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* 当前页面的激活样式 */
+.nav a.active::after {
+  opacity: 1;
 }
 
 .nav a:hover {
