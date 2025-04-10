@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drakedooog Disgin</title>
+    <title>Drakedooog Design</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <!-- 页面主容器，限制最大宽度为1200px -->
@@ -49,17 +50,5 @@
     </div>
     <!-- footer -->
     <div id="footer-container"></div>
-    <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("footer-container").innerHTML = data;
-        });
-      fetch("header.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("header-container").innerHTML = data;
-        });
-    </script>
   </body>
 </html>

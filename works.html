@@ -6,6 +6,7 @@
     <title>My Works</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./img/logo.jpg" type="image/x-icon" />
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -55,17 +56,5 @@
        
     <!-- footer -->
     <div id="footer-container"></div>
-    <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("footer-container").innerHTML = data;
-        });
-              fetch("header.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("header-container").innerHTML = data;
-        });
-    </script>
   </body>
 </html>
